@@ -12,3 +12,4 @@ C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Deb
 C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Smash_The_Math.start.resources
 C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Görsel_Programlama_Oyunu.frmRegister.resources
 C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Görsel_Programlama_Oyunu.signin.resources
+C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\skor_tablo.kullanici_profil.resources
