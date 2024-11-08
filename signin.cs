@@ -28,10 +28,5 @@ namespace Görsel_Programlama_Oyunu
             kayitFormu.Show(); // Kayıt ekranını gösteriyoruz
             this.Hide(); // Giriş ekranını gizliyoruz (kapatmadan)
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
