@@ -39,7 +39,7 @@
             this.bilgilerim = new System.Windows.Forms.Button();
             this.bilgi_panel = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ana_syf_don = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -100,7 +100,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(833, 31);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 23);
+            this.label3.Size = new System.Drawing.Size(134, 27);
             this.label3.TabIndex = 4;
             this.label3.Text = "Mert Kapar";
             // 
@@ -111,7 +111,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(103, 31);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 23);
+            this.label2.Size = new System.Drawing.Size(193, 27);
             this.label2.TabIndex = 2;
             this.label2.Text = "Smash The Math";
             // 
@@ -149,7 +149,7 @@
             // bilgi_panel
             // 
             this.bilgi_panel.Controls.Add(this.button2);
-            this.bilgi_panel.Controls.Add(this.button1);
+            this.bilgi_panel.Controls.Add(this.ana_syf_don);
             this.bilgi_panel.Controls.Add(this.pictureBox2);
             this.bilgi_panel.Controls.Add(this.textBox3);
             this.bilgi_panel.Controls.Add(this.textBox2);
@@ -177,19 +177,20 @@
             this.button2.Text = "Profil Fotoğrafını Değiştir";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // ana_syf_don
             // 
-            this.button1.BackColor = System.Drawing.Color.Gold;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(254, 340);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(300, 73);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Ana Sayfaya Dön";
-            this.button1.UseVisualStyleBackColor = false;
+            this.ana_syf_don.BackColor = System.Drawing.Color.Gold;
+            this.ana_syf_don.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.ana_syf_don.FlatAppearance.BorderSize = 2;
+            this.ana_syf_don.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ana_syf_don.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ana_syf_don.Location = new System.Drawing.Point(254, 340);
+            this.ana_syf_don.Name = "ana_syf_don";
+            this.ana_syf_don.Size = new System.Drawing.Size(300, 73);
+            this.ana_syf_don.TabIndex = 10;
+            this.ana_syf_don.Text = "Ana Sayfaya Dön";
+            this.ana_syf_don.UseVisualStyleBackColor = false;
+            this.ana_syf_don.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox2
             // 
@@ -231,7 +232,7 @@
             this.label5.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.Location = new System.Drawing.Point(60, 242);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(135, 23);
+            this.label5.Size = new System.Drawing.Size(163, 27);
             this.label5.TabIndex = 5;
             this.label5.Text = "Toplam Puan:";
             // 
@@ -241,7 +242,7 @@
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(60, 154);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 23);
+            this.label4.Size = new System.Drawing.Size(102, 27);
             this.label4.TabIndex = 3;
             this.label4.Text = "E-posta:";
             // 
@@ -251,7 +252,7 @@
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(60, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 23);
+            this.label1.Size = new System.Drawing.Size(158, 27);
             this.label1.TabIndex = 1;
             this.label1.Text = "Kullanıcı Adı:";
             // 
@@ -294,7 +295,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ana_syf_don;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;

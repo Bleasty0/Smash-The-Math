@@ -1,4 +1,5 @@
-﻿using System;
+﻿using skor_tablo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Smash_The_Math
 {
-    public partial class start : Form
+    public partial class start_basla : Form
     {
-        public start()
+        public start_basla()
         {
             InitializeComponent();
         }
@@ -36,6 +37,28 @@ namespace Smash_The_Math
                 GraphicsPath path = new GraphicsPath();
                 path.AddEllipse(0, 0, btn.Width, btn.Height);
                 btn.Region = new Region(path);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ingame ingame = new ingame();
+            ingame.Show();
+            this.Close();
+        }
+
+        private void skor_tablo_buton_Click(object sender, EventArgs e)
+        {
+            scoreboard scoreboard = new scoreboard();
+            scoreboard.Show();
+            this.Close();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            kullanici_profil kullanici_Profil = new kullanici_profil();
+            kullanici_Profil.Show();
+            this.Close();
         }
     }
 }

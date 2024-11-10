@@ -30,15 +30,15 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtkullanıcıadı = new System.Windows.Forms.TextBox();
+            this.txtkullaniciadi = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txteposta = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtşifre = new System.Windows.Forms.TextBox();
-            this.txtşifreyionayla = new System.Windows.Forms.TextBox();
+            this.txtsifre = new System.Windows.Forms.TextBox();
+            this.txtsifreonayla = new System.Windows.Forms.TextBox();
             this.checkBxşifreyigöster = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.kayit_ol = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -51,7 +51,7 @@
             this.label1.ForeColor = System.Drawing.Color.Gold;
             this.label1.Location = new System.Drawing.Point(42, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 34);
+            this.label1.Size = new System.Drawing.Size(193, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Kayıt Ekranı";
             // 
@@ -65,16 +65,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Kullanıcı Adı";
             // 
-            // txtkullanıcıadı
+            // txtkullaniciadi
             // 
-            this.txtkullanıcıadı.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtkullanıcıadı.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtkullanıcıadı.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtkullanıcıadı.Location = new System.Drawing.Point(34, 96);
-            this.txtkullanıcıadı.Multiline = true;
-            this.txtkullanıcıadı.Name = "txtkullanıcıadı";
-            this.txtkullanıcıadı.Size = new System.Drawing.Size(216, 28);
-            this.txtkullanıcıadı.TabIndex = 2;
+            this.txtkullaniciadi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtkullaniciadi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtkullaniciadi.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtkullaniciadi.Location = new System.Drawing.Point(34, 96);
+            this.txtkullaniciadi.Multiline = true;
+            this.txtkullaniciadi.Name = "txtkullaniciadi";
+            this.txtkullaniciadi.Size = new System.Drawing.Size(216, 28);
+            this.txtkullaniciadi.TabIndex = 2;
             // 
             // label3
             // 
@@ -117,27 +117,27 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Şifreyi Onayla";
             // 
-            // txtşifre
+            // txtsifre
             // 
-            this.txtşifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtşifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtşifre.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtşifre.Location = new System.Drawing.Point(34, 238);
-            this.txtşifre.Multiline = true;
-            this.txtşifre.Name = "txtşifre";
-            this.txtşifre.Size = new System.Drawing.Size(216, 28);
-            this.txtşifre.TabIndex = 7;
+            this.txtsifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtsifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtsifre.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsifre.Location = new System.Drawing.Point(34, 238);
+            this.txtsifre.Multiline = true;
+            this.txtsifre.Name = "txtsifre";
+            this.txtsifre.Size = new System.Drawing.Size(216, 28);
+            this.txtsifre.TabIndex = 7;
             // 
-            // txtşifreyionayla
+            // txtsifreonayla
             // 
-            this.txtşifreyionayla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtşifreyionayla.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtşifreyionayla.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtşifreyionayla.Location = new System.Drawing.Point(34, 308);
-            this.txtşifreyionayla.Multiline = true;
-            this.txtşifreyionayla.Name = "txtşifreyionayla";
-            this.txtşifreyionayla.Size = new System.Drawing.Size(216, 28);
-            this.txtşifreyionayla.TabIndex = 8;
+            this.txtsifreonayla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtsifreonayla.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtsifreonayla.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsifreonayla.Location = new System.Drawing.Point(34, 308);
+            this.txtsifreonayla.Multiline = true;
+            this.txtsifreonayla.Name = "txtsifreonayla";
+            this.txtsifreonayla.Size = new System.Drawing.Size(216, 28);
+            this.txtsifreonayla.TabIndex = 8;
             // 
             // checkBxşifreyigöster
             // 
@@ -152,19 +152,20 @@
             this.checkBxşifreyigöster.Text = "Şifreyi Göster";
             this.checkBxşifreyigöster.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // kayit_ol
             // 
-            this.button1.BackColor = System.Drawing.Color.Gold;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(34, 390);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 35);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "KAYIT OL";
-            this.button1.UseVisualStyleBackColor = false;
+            this.kayit_ol.BackColor = System.Drawing.Color.Gold;
+            this.kayit_ol.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.kayit_ol.FlatAppearance.BorderSize = 0;
+            this.kayit_ol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.kayit_ol.ForeColor = System.Drawing.Color.White;
+            this.kayit_ol.Location = new System.Drawing.Point(34, 390);
+            this.kayit_ol.Name = "kayit_ol";
+            this.kayit_ol.Size = new System.Drawing.Size(216, 35);
+            this.kayit_ol.TabIndex = 10;
+            this.kayit_ol.Text = "KAYIT OL";
+            this.kayit_ol.UseVisualStyleBackColor = false;
+            this.kayit_ol.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -211,21 +212,21 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.kayit_ol);
             this.Controls.Add(this.checkBxşifreyigöster);
-            this.Controls.Add(this.txtşifreyionayla);
-            this.Controls.Add(this.txtşifre);
+            this.Controls.Add(this.txtsifreonayla);
+            this.Controls.Add(this.txtsifre);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txteposta);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtkullanıcıadı);
+            this.Controls.Add(this.txtkullaniciadi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Gold;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -238,15 +239,15 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtkullanıcıadı;
+        private System.Windows.Forms.TextBox txtkullaniciadi;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txteposta;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtşifre;
-        private System.Windows.Forms.TextBox txtşifreyionayla;
+        private System.Windows.Forms.TextBox txtsifre;
+        private System.Windows.Forms.TextBox txtsifreonayla;
         private System.Windows.Forms.CheckBox checkBxşifreyigöster;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button kayit_ol;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.LinkLabel linkLabel1;

@@ -25,10 +25,17 @@ namespace Smash_The_Math
         private void button6_Click(object sender, EventArgs e)
         {
             // Yeni bir Form2 nesnesi oluşturuyoruz
-            start form2 = new start();
+            start_basla form2 = new start_basla();
 
             // Form2'yi gösteriyoruz
             form2.Show(); 
+        }
+
+        private void ana_syf_Click(object sender, EventArgs e)
+        {
+            start_basla start = new start_basla();
+            start.Show();
+            this.Close();
         }
     }
 }

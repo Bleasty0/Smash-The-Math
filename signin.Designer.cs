@@ -30,11 +30,11 @@
         {
             this.label6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.giris_yap = new System.Windows.Forms.Button();
             this.checkBxşifreyigöster = new System.Windows.Forms.CheckBox();
-            this.txtşifre = new System.Windows.Forms.TextBox();
+            this.txtsifre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtkullanıcıadı = new System.Windows.Forms.TextBox();
+            this.txtkullaniciadi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -63,19 +63,20 @@
             this.button2.Text = "TEMİZLE";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // giris_yap
             // 
-            this.button1.BackColor = System.Drawing.Color.Gold;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(36, 321);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 35);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "GİRİŞ YAP";
-            this.button1.UseVisualStyleBackColor = false;
+            this.giris_yap.BackColor = System.Drawing.Color.Gold;
+            this.giris_yap.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.giris_yap.FlatAppearance.BorderSize = 0;
+            this.giris_yap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.giris_yap.ForeColor = System.Drawing.Color.White;
+            this.giris_yap.Location = new System.Drawing.Point(36, 321);
+            this.giris_yap.Name = "giris_yap";
+            this.giris_yap.Size = new System.Drawing.Size(216, 35);
+            this.giris_yap.TabIndex = 24;
+            this.giris_yap.Text = "GİRİŞ YAP";
+            this.giris_yap.UseVisualStyleBackColor = false;
+            this.giris_yap.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkBxşifreyigöster
             // 
@@ -90,16 +91,16 @@
             this.checkBxşifreyigöster.Text = "Şifreyi Göster";
             this.checkBxşifreyigöster.UseVisualStyleBackColor = true;
             // 
-            // txtşifre
+            // txtsifre
             // 
-            this.txtşifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtşifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtşifre.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtşifre.Location = new System.Drawing.Point(36, 210);
-            this.txtşifre.Multiline = true;
-            this.txtşifre.Name = "txtşifre";
-            this.txtşifre.Size = new System.Drawing.Size(216, 28);
-            this.txtşifre.TabIndex = 21;
+            this.txtsifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtsifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtsifre.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsifre.Location = new System.Drawing.Point(36, 210);
+            this.txtsifre.Multiline = true;
+            this.txtsifre.Name = "txtsifre";
+            this.txtsifre.Size = new System.Drawing.Size(216, 28);
+            this.txtsifre.TabIndex = 21;
             // 
             // label4
             // 
@@ -111,16 +112,16 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Şifre";
             // 
-            // txtkullanıcıadı
+            // txtkullaniciadi
             // 
-            this.txtkullanıcıadı.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.txtkullanıcıadı.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtkullanıcıadı.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtkullanıcıadı.Location = new System.Drawing.Point(36, 128);
-            this.txtkullanıcıadı.Multiline = true;
-            this.txtkullanıcıadı.Name = "txtkullanıcıadı";
-            this.txtkullanıcıadı.Size = new System.Drawing.Size(216, 28);
-            this.txtkullanıcıadı.TabIndex = 16;
+            this.txtkullaniciadi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.txtkullaniciadi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtkullaniciadi.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtkullaniciadi.Location = new System.Drawing.Point(36, 128);
+            this.txtkullaniciadi.Multiline = true;
+            this.txtkullaniciadi.Name = "txtkullaniciadi";
+            this.txtkullaniciadi.Size = new System.Drawing.Size(216, 28);
+            this.txtkullaniciadi.TabIndex = 16;
             // 
             // label2
             // 
@@ -139,7 +140,7 @@
             this.label1.ForeColor = System.Drawing.Color.Gold;
             this.label1.Location = new System.Drawing.Point(39, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 34);
+            this.label1.Size = new System.Drawing.Size(184, 33);
             this.label1.TabIndex = 14;
             this.label1.Text = "Giriş Ekranı";
             // 
@@ -156,7 +157,7 @@
             this.linkLabel1.Text = "Hesap Oluştur";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // frmLogin
+            // signin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -165,18 +166,18 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.giris_yap);
             this.Controls.Add(this.checkBxşifreyigöster);
-            this.Controls.Add(this.txtşifre);
+            this.Controls.Add(this.txtsifre);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtkullanıcıadı);
+            this.Controls.Add(this.txtkullaniciadi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "frmLogin";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "signin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             this.ResumeLayout(false);
@@ -187,11 +188,11 @@
         #endregion
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button giris_yap;
         private System.Windows.Forms.CheckBox checkBxşifreyigöster;
-        private System.Windows.Forms.TextBox txtşifre;
+        private System.Windows.Forms.TextBox txtsifre;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtkullanıcıadı;
+        private System.Windows.Forms.TextBox txtkullaniciadi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;

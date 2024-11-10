@@ -17,7 +17,7 @@ namespace Smash_The_Math
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new start());
+            Application.Run(new signin());
         }
     }
 }

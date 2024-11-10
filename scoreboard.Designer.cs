@@ -1,6 +1,6 @@
 ﻿namespace skor_tablo
 {
-    partial class Form1
+    partial class scoreboard
     {
         /// <summary>
         ///Gerekli tasarımcı değişkeni.
@@ -35,7 +35,7 @@
             this.siralama = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toplam_puan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.skor_anasyf_don = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,27 +104,35 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Skor Tablosu";
             // 
-            // button1
+            // skor_anasyf_don
             // 
-            this.button1.Location = new System.Drawing.Point(906, 41);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(201, 38);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Profil Ekranı";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.skor_anasyf_don.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.skor_anasyf_don.BackColor = System.Drawing.Color.Gold;
+            this.skor_anasyf_don.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.skor_anasyf_don.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.skor_anasyf_don.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.skor_anasyf_don.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.skor_anasyf_don.ForeColor = System.Drawing.Color.Black;
+            this.skor_anasyf_don.Location = new System.Drawing.Point(829, 36);
+            this.skor_anasyf_don.Margin = new System.Windows.Forms.Padding(4);
+            this.skor_anasyf_don.Name = "skor_anasyf_don";
+            this.skor_anasyf_don.Size = new System.Drawing.Size(267, 62);
+            this.skor_anasyf_don.TabIndex = 6;
+            this.skor_anasyf_don.Text = "Ana Sayfaya Dön";
+            this.skor_anasyf_don.UseVisualStyleBackColor = false;
+            this.skor_anasyf_don.Click += new System.EventHandler(this.skor_anasyf_don_Click);
             // 
-            // Form1
+            // scoreboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1143, 666);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.skor_anasyf_don);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Form1";
+            this.Name = "scoreboard";
             this.Padding = new System.Windows.Forms.Padding(20);
             this.Text = "Form1";
             this.Shown += new System.EventHandler(this.Form1_Shown);
@@ -141,7 +149,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn siralama;
         private System.Windows.Forms.DataGridViewTextBoxColumn toplam_puan;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button skor_anasyf_don;
     }
 }
 

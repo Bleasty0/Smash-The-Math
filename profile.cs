@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Smash_The_Math;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,7 +30,12 @@ namespace skor_tablo
 
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            start_basla start = new start_basla();
+            start.Show();
+            this.Close();
+        }
     }
 
 

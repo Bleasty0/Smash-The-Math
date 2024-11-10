@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Smash_The_Math;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace skor_tablo
 {
-    public partial class Form1 : Form
+    public partial class scoreboard : Form
     {
-        public Form1()
+        public scoreboard()
         {
             InitializeComponent();
         }
@@ -56,6 +57,14 @@ namespace skor_tablo
 
             
             form3.Show();   */
+        }
+
+        private void skor_anasyf_don_Click(object sender, EventArgs e)
+        {
+            start_basla start = new start_basla();
+            start.Show();
+            this.Close();
+            
         }
     }
 }
