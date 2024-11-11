@@ -37,7 +37,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtsifre = new System.Windows.Forms.TextBox();
             this.txtsifreonayla = new System.Windows.Forms.TextBox();
-            this.checkBxşifreyigöster = new System.Windows.Forms.CheckBox();
+            this.chkSifreGoster = new System.Windows.Forms.CheckBox();
             this.kayit_ol = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,9 +49,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(42, 21);
+            this.label1.Location = new System.Drawing.Point(305, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 33);
+            this.label1.Size = new System.Drawing.Size(158, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "Kayıt Ekranı";
             // 
@@ -59,9 +59,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
-            this.label2.Location = new System.Drawing.Point(30, 70);
+            this.label2.Location = new System.Drawing.Point(297, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 23);
+            this.label2.Size = new System.Drawing.Size(92, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Kullanıcı Adı";
             // 
@@ -69,20 +69,20 @@
             // 
             this.txtkullaniciadi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txtkullaniciadi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtkullaniciadi.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtkullaniciadi.Location = new System.Drawing.Point(34, 96);
+            this.txtkullaniciadi.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtkullaniciadi.Location = new System.Drawing.Point(301, 73);
             this.txtkullaniciadi.Multiline = true;
             this.txtkullaniciadi.Name = "txtkullaniciadi";
-            this.txtkullaniciadi.Size = new System.Drawing.Size(216, 28);
+            this.txtkullaniciadi.Size = new System.Drawing.Size(210, 25);
             this.txtkullaniciadi.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
-            this.label3.Location = new System.Drawing.Point(30, 136);
+            this.label3.Location = new System.Drawing.Point(297, 107);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 23);
+            this.label3.Size = new System.Drawing.Size(66, 19);
             this.label3.TabIndex = 3;
             this.label3.Text = "E - Posta";
             // 
@@ -90,20 +90,20 @@
             // 
             this.txteposta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txteposta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txteposta.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txteposta.Location = new System.Drawing.Point(34, 172);
+            this.txteposta.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txteposta.Location = new System.Drawing.Point(301, 129);
             this.txteposta.Multiline = true;
             this.txteposta.Name = "txteposta";
-            this.txteposta.Size = new System.Drawing.Size(216, 28);
+            this.txteposta.Size = new System.Drawing.Size(210, 25);
             this.txteposta.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
-            this.label4.Location = new System.Drawing.Point(30, 212);
+            this.label4.Location = new System.Drawing.Point(297, 165);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 23);
+            this.label4.Size = new System.Drawing.Size(42, 19);
             this.label4.TabIndex = 5;
             this.label4.Text = "Şifre";
             // 
@@ -111,9 +111,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
-            this.label5.Location = new System.Drawing.Point(30, 282);
+            this.label5.Location = new System.Drawing.Point(297, 222);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 23);
+            this.label5.Size = new System.Drawing.Size(105, 19);
             this.label5.TabIndex = 6;
             this.label5.Text = "Şifreyi Onayla";
             // 
@@ -121,36 +121,38 @@
             // 
             this.txtsifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txtsifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtsifre.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsifre.Location = new System.Drawing.Point(34, 238);
+            this.txtsifre.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtsifre.Location = new System.Drawing.Point(301, 187);
             this.txtsifre.Multiline = true;
             this.txtsifre.Name = "txtsifre";
-            this.txtsifre.Size = new System.Drawing.Size(216, 28);
+            this.txtsifre.Size = new System.Drawing.Size(210, 25);
             this.txtsifre.TabIndex = 7;
             // 
             // txtsifreonayla
             // 
             this.txtsifreonayla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txtsifreonayla.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtsifreonayla.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsifreonayla.Location = new System.Drawing.Point(34, 308);
+            this.txtsifreonayla.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtsifreonayla.Location = new System.Drawing.Point(301, 244);
             this.txtsifreonayla.Multiline = true;
             this.txtsifreonayla.Name = "txtsifreonayla";
-            this.txtsifreonayla.Size = new System.Drawing.Size(216, 28);
+            this.txtsifreonayla.Size = new System.Drawing.Size(210, 25);
             this.txtsifreonayla.TabIndex = 8;
+            this.txtsifreonayla.TextChanged += new System.EventHandler(this.txtsifreonayla_TextChanged);
             // 
-            // checkBxşifreyigöster
+            // chkSifreGoster
             // 
-            this.checkBxşifreyigöster.AutoSize = true;
-            this.checkBxşifreyigöster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBxşifreyigöster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBxşifreyigöster.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
-            this.checkBxşifreyigöster.Location = new System.Drawing.Point(111, 357);
-            this.checkBxşifreyigöster.Name = "checkBxşifreyigöster";
-            this.checkBxşifreyigöster.Size = new System.Drawing.Size(139, 27);
-            this.checkBxşifreyigöster.TabIndex = 9;
-            this.checkBxşifreyigöster.Text = "Şifreyi Göster";
-            this.checkBxşifreyigöster.UseVisualStyleBackColor = true;
+            this.chkSifreGoster.AutoSize = true;
+            this.chkSifreGoster.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chkSifreGoster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkSifreGoster.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
+            this.chkSifreGoster.Location = new System.Drawing.Point(376, 278);
+            this.chkSifreGoster.Name = "chkSifreGoster";
+            this.chkSifreGoster.Size = new System.Drawing.Size(118, 23);
+            this.chkSifreGoster.TabIndex = 9;
+            this.chkSifreGoster.Text = "Şifreyi Göster";
+            this.chkSifreGoster.UseVisualStyleBackColor = true;
+            this.chkSifreGoster.CheckedChanged += new System.EventHandler(this.chkSifreGoster_CheckedChanged);
             // 
             // kayit_ol
             // 
@@ -159,9 +161,9 @@
             this.kayit_ol.FlatAppearance.BorderSize = 0;
             this.kayit_ol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kayit_ol.ForeColor = System.Drawing.Color.White;
-            this.kayit_ol.Location = new System.Drawing.Point(34, 390);
+            this.kayit_ol.Location = new System.Drawing.Point(302, 307);
             this.kayit_ol.Name = "kayit_ol";
-            this.kayit_ol.Size = new System.Drawing.Size(216, 35);
+            this.kayit_ol.Size = new System.Drawing.Size(210, 26);
             this.kayit_ol.TabIndex = 10;
             this.kayit_ol.Text = "KAYIT OL";
             this.kayit_ol.UseVisualStyleBackColor = false;
@@ -173,9 +175,9 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.Gold;
-            this.button2.Location = new System.Drawing.Point(34, 442);
+            this.button2.Location = new System.Drawing.Point(302, 348);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(216, 35);
+            this.button2.Size = new System.Drawing.Size(210, 26);
             this.button2.TabIndex = 11;
             this.button2.Text = "TEMİZLE";
             this.button2.UseVisualStyleBackColor = false;
@@ -184,9 +186,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
-            this.label6.Location = new System.Drawing.Point(30, 496);
+            this.label6.Location = new System.Drawing.Point(310, 395);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(234, 23);
+            this.label6.Size = new System.Drawing.Size(196, 19);
             this.label6.TabIndex = 12;
             this.label6.Text = "Zaten Bir Hesabınız Var Mı ?";
             // 
@@ -195,9 +197,9 @@
             this.linkLabel1.ActiveLinkColor = System.Drawing.Color.White;
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.LinkColor = System.Drawing.Color.Gold;
-            this.linkLabel1.Location = new System.Drawing.Point(61, 536);
+            this.linkLabel1.Location = new System.Drawing.Point(340, 423);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(154, 23);
+            this.linkLabel1.Size = new System.Drawing.Size(128, 19);
             this.linkLabel1.TabIndex = 14;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Girişe Geri Dönün";
@@ -205,15 +207,15 @@
             // 
             // frmRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(291, 596);
+            this.ClientSize = new System.Drawing.Size(804, 451);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.kayit_ol);
-            this.Controls.Add(this.checkBxşifreyigöster);
+            this.Controls.Add(this.chkSifreGoster);
             this.Controls.Add(this.txtsifreonayla);
             this.Controls.Add(this.txtsifre);
             this.Controls.Add(this.label5);
@@ -246,7 +248,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtsifre;
         private System.Windows.Forms.TextBox txtsifreonayla;
-        private System.Windows.Forms.CheckBox checkBxşifreyigöster;
+        private System.Windows.Forms.CheckBox chkSifreGoster;
         private System.Windows.Forms.Button kayit_ol;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label6;

@@ -17,6 +17,8 @@ namespace Görsel_Programlama_Oyunu
         public signin()
         {
             InitializeComponent();
+            // Şifrenin gizlenmesini sağlamak için PasswordChar özelliğini ayarlıyoruz.
+            txtsifre.PasswordChar = '•';
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -70,12 +72,11 @@ namespace Görsel_Programlama_Oyunu
 
                 con.Close();
             }
-
-
-
-
-
-            
+        }
+        private void chkSifreGoster_CheckedChanged_1(object sender, EventArgs e)
+        {
+            // Şifreyi göster kutusu işaretli ise şifreyi düz metin olarak gösterir, değilse gizler
+            txtsifre.PasswordChar = chkSifreGoster.Checked ? '\0' : '•';
         }
     }
 }

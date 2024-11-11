@@ -1,4 +1,5 @@
 ﻿using Görsel_Programlama_Oyunu;
+using skor_tablo;
 using System;
 using System.Collections.Generic;
 using System.Linq;

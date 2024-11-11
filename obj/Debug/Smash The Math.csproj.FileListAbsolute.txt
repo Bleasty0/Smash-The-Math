@@ -7,9 +7,7 @@ C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Deb
 C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Smash The Math.csproj.CoreCompileInputs.cache
 C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Smash The Math.exe
 C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Smash The Math.pdb
-C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\skor_tablo.Form1.resources
 C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Smash_The_Math.ingame.resources
-C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Smash_The_Math.start.resources
 C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Görsel_Programlama_Oyunu.frmRegister.resources
 C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Görsel_Programlama_Oyunu.signin.resources
 C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\skor_tablo.kullanici_profil.resources
@@ -43,3 +41,5 @@ C:\Users\mertk\Desktop\Görsel ve Mat Proje\Smash The Math\obj\Debug\Smash The M
 C:\Users\mertk\Desktop\Görsel ve Mat Proje\Smash The Math\obj\Debug\Smash The Math.pdb
 C:\Users\mertk\Desktop\Görsel ve Mat Proje\Smash The Math\obj\Debug\skor_tablo.scoreboard.resources
 C:\Users\mertk\Desktop\Görsel ve Mat Proje\Smash The Math\obj\Debug\Smash_The_Math.start_basla.resources
+C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Smash_The_Math.start_basla.resources
+C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\skor_tablo.scoreboard.resources

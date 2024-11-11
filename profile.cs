@@ -36,6 +36,11 @@ namespace skor_tablo
             start.Show();
             this.Close();
         }
+
+        private void kullanici_profil_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

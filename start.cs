@@ -60,5 +60,10 @@ namespace Smash_The_Math
             kullanici_Profil.Show();
             this.Close();
         }
+
+        private void start_basla_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

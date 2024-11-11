@@ -16,6 +16,8 @@ namespace Görsel_Programlama_Oyunu
         public frmRegister()
         {
             InitializeComponent();
+            txtsifre.PasswordChar = '•';
+            txtsifreonayla.PasswordChar = '•';
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -66,6 +68,18 @@ namespace Görsel_Programlama_Oyunu
             }
 
             MessageBox.Show("Kayıt başarılı. Giriş yapabilirsiniz.");
+        }
+
+        private void txtsifreonayla_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkSifreGoster_CheckedChanged(object sender, EventArgs e)
+        {
+            // Şifreyi göster kutusu işaretli ise şifreyi düz metin olarak gösterir, değilse gizler
+            txtsifre.PasswordChar = chkSifreGoster.Checked ? '\0' : '•';
+            txtsifreonayla.PasswordChar = chkSifreGoster.Checked ? '\0' : '•';
         }
     }
 }

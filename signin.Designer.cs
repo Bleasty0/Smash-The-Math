@@ -31,7 +31,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.giris_yap = new System.Windows.Forms.Button();
-            this.checkBxşifreyigöster = new System.Windows.Forms.CheckBox();
+            this.chkSifreGoster = new System.Windows.Forms.CheckBox();
             this.txtsifre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtkullaniciadi = new System.Windows.Forms.TextBox();
@@ -44,9 +44,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
-            this.label6.Location = new System.Drawing.Point(59, 434);
+            this.label6.Location = new System.Drawing.Point(336, 376);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(169, 23);
+            this.label6.Size = new System.Drawing.Size(142, 19);
             this.label6.TabIndex = 26;
             this.label6.Text = " Hesabınız Yok Mu ?";
             // 
@@ -56,7 +56,7 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.Gold;
-            this.button2.Location = new System.Drawing.Point(36, 380);
+            this.button2.Location = new System.Drawing.Point(303, 320);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(216, 35);
             this.button2.TabIndex = 25;
@@ -70,7 +70,7 @@
             this.giris_yap.FlatAppearance.BorderSize = 0;
             this.giris_yap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.giris_yap.ForeColor = System.Drawing.Color.White;
-            this.giris_yap.Location = new System.Drawing.Point(36, 321);
+            this.giris_yap.Location = new System.Drawing.Point(303, 263);
             this.giris_yap.Name = "giris_yap";
             this.giris_yap.Size = new System.Drawing.Size(216, 35);
             this.giris_yap.TabIndex = 24;
@@ -78,25 +78,26 @@
             this.giris_yap.UseVisualStyleBackColor = false;
             this.giris_yap.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checkBxşifreyigöster
+            // chkSifreGoster
             // 
-            this.checkBxşifreyigöster.AutoSize = true;
-            this.checkBxşifreyigöster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBxşifreyigöster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBxşifreyigöster.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
-            this.checkBxşifreyigöster.Location = new System.Drawing.Point(113, 269);
-            this.checkBxşifreyigöster.Name = "checkBxşifreyigöster";
-            this.checkBxşifreyigöster.Size = new System.Drawing.Size(139, 27);
-            this.checkBxşifreyigöster.TabIndex = 23;
-            this.checkBxşifreyigöster.Text = "Şifreyi Göster";
-            this.checkBxşifreyigöster.UseVisualStyleBackColor = true;
+            this.chkSifreGoster.AutoSize = true;
+            this.chkSifreGoster.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chkSifreGoster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkSifreGoster.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
+            this.chkSifreGoster.Location = new System.Drawing.Point(382, 221);
+            this.chkSifreGoster.Name = "chkSifreGoster";
+            this.chkSifreGoster.Size = new System.Drawing.Size(118, 23);
+            this.chkSifreGoster.TabIndex = 23;
+            this.chkSifreGoster.Text = "Şifreyi Göster";
+            this.chkSifreGoster.UseVisualStyleBackColor = true;
+            this.chkSifreGoster.CheckedChanged += new System.EventHandler(this.chkSifreGoster_CheckedChanged_1);
             // 
             // txtsifre
             // 
             this.txtsifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txtsifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtsifre.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsifre.Location = new System.Drawing.Point(36, 210);
+            this.txtsifre.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtsifre.Location = new System.Drawing.Point(303, 170);
             this.txtsifre.Multiline = true;
             this.txtsifre.Name = "txtsifre";
             this.txtsifre.Size = new System.Drawing.Size(216, 28);
@@ -106,9 +107,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
-            this.label4.Location = new System.Drawing.Point(41, 170);
+            this.label4.Location = new System.Drawing.Point(307, 139);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 23);
+            this.label4.Size = new System.Drawing.Size(42, 19);
             this.label4.TabIndex = 19;
             this.label4.Text = "Şifre";
             // 
@@ -116,8 +117,8 @@
             // 
             this.txtkullaniciadi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.txtkullaniciadi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtkullaniciadi.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtkullaniciadi.Location = new System.Drawing.Point(36, 128);
+            this.txtkullaniciadi.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtkullaniciadi.Location = new System.Drawing.Point(303, 86);
             this.txtkullaniciadi.Multiline = true;
             this.txtkullaniciadi.Name = "txtkullaniciadi";
             this.txtkullaniciadi.Size = new System.Drawing.Size(216, 28);
@@ -127,9 +128,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
-            this.label2.Location = new System.Drawing.Point(41, 88);
+            this.label2.Location = new System.Drawing.Point(307, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 23);
+            this.label2.Size = new System.Drawing.Size(92, 19);
             this.label2.TabIndex = 15;
             this.label2.Text = "Kullanıcı Adı";
             // 
@@ -138,9 +139,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(39, 25);
+            this.label1.Location = new System.Drawing.Point(306, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 33);
+            this.label1.Size = new System.Drawing.Size(152, 27);
             this.label1.TabIndex = 14;
             this.label1.Text = "Giriş Ekranı";
             // 
@@ -149,9 +150,9 @@
             this.linkLabel1.ActiveLinkColor = System.Drawing.Color.White;
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.LinkColor = System.Drawing.Color.Gold;
-            this.linkLabel1.Location = new System.Drawing.Point(76, 471);
+            this.linkLabel1.Location = new System.Drawing.Point(353, 408);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(126, 23);
+            this.linkLabel1.Size = new System.Drawing.Size(105, 19);
             this.linkLabel1.TabIndex = 28;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Hesap Oluştur";
@@ -159,15 +160,15 @@
             // 
             // signin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(284, 545);
+            this.ClientSize = new System.Drawing.Size(804, 451);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.giris_yap);
-            this.Controls.Add(this.checkBxşifreyigöster);
+            this.Controls.Add(this.chkSifreGoster);
             this.Controls.Add(this.txtsifre);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtkullaniciadi);
@@ -189,7 +190,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button giris_yap;
-        private System.Windows.Forms.CheckBox checkBxşifreyigöster;
+        private System.Windows.Forms.CheckBox chkSifreGoster;
         private System.Windows.Forms.TextBox txtsifre;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtkullaniciadi;
