@@ -17,7 +17,7 @@ namespace Görsel_Programlama_Oyunu
         public signin()
         {
             InitializeComponent();
-            // Şifrenin gizlenmesini sağlamak için PasswordChar özelliğini ayarlıyoruz.
+            // Şifrenin gizlenmesini sağlamak için PasswordChar özelliğini ayarlıyoruz. Değişti.
             txtsifre.PasswordChar = '•';
         }
 
