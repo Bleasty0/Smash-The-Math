@@ -51,19 +51,11 @@ namespace skor_tablo
                 );
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            /*  Form3 form3 = new Form3();
-
-            
-            form3.Show();   */
-        }
-
         private void skor_anasyf_don_Click(object sender, EventArgs e)
         {
             start_basla start = new start_basla();
             start.Show();
-            this.Close();
+            this.Hide();
             
         }
     }

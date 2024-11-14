@@ -58,11 +58,11 @@
     <Compile Include="profile.Designer.cs">
       <DependentUpon>profile.cs</DependentUpon>
     </Compile>
-    <Compile Include="start.cs">
+    <Compile Include="start_basla.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="start.Designer.cs">
-      <DependentUpon>start.cs</DependentUpon>
+    <Compile Include="start_basla.Designer.cs">
+      <DependentUpon>start_basla.cs</DependentUpon>
     </Compile>
     <Compile Include="scoreboard.cs">
       <SubType>Form</SubType>
@@ -90,8 +90,8 @@
     <EmbeddedResource Include="profile.resx">
       <DependentUpon>profile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="start.resx">
-      <DependentUpon>start.cs</DependentUpon>
+    <EmbeddedResource Include="start_basla.resx">
+      <DependentUpon>start_basla.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="scoreboard.resx">
       <DependentUpon>scoreboard.cs</DependentUpon>

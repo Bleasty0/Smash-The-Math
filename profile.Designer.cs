@@ -84,7 +84,7 @@
             // 
             this.cıkis.BackColor = System.Drawing.Color.White;
             this.cıkis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cıkis.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cıkis.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cıkis.Location = new System.Drawing.Point(475, 28);
             this.cıkis.Name = "cıkis";
             this.cıkis.Size = new System.Drawing.Size(116, 34);
@@ -148,13 +148,14 @@
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button2.FlatAppearance.BorderSize = 2;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.Location = new System.Drawing.Point(531, 249);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(199, 42);
             this.button2.TabIndex = 11;
             this.button2.Text = "Profil Fotoğrafını Değiştir";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // ana_syf_don
             // 

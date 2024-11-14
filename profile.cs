@@ -18,7 +18,6 @@ namespace skor_tablo
             InitializeComponent();
         }
 
-        
         private void cıkis_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -27,19 +26,31 @@ namespace skor_tablo
         private void bilgilerim_Click(object sender, EventArgs e)
         {
             bilgi_panel.Visible = true;
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             start_basla start = new start_basla();
             start.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void kullanici_profil_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Title = "Profil Fotoğrafını Seç";
+            openFileDialog.Filter = "Resim Dosyaları|*.jpg;*.jpeg;*.png;*.bmp";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Seçilen dosyayı PictureBox'a yükle
+                pictureBox2.Image = Image.FromFile(openFileDialog.FileName);
+            }
         }
     }
 
