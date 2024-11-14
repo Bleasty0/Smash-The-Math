@@ -223,10 +223,6 @@
             this.ana_syf.UseVisualStyleBackColor = false;
             this.ana_syf.Click += new System.EventHandler(this.ana_syf_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // ingame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

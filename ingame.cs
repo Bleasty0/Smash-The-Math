@@ -22,6 +22,7 @@ namespace Smash_The_Math
             InitializeTimer();
         }
 
+
         private void InitializeGame()
         {
             // Timer ayarları
@@ -50,14 +51,18 @@ namespace Smash_The_Math
         {
             if (timeLeft > 0)
             {
-                timeLeft--; // Süreden 1 saniye düş
-                label4.Text = "00:" + timeLeft.ToString("D2"); // Süreyi güncelle
+                // Süreyi güncelle
+                timeLeft--;
+                label4.Text = $"00:{timeLeft:D2}";
+
+                // Pres makinesini her saniye moveStep kadar aşağıya hareket ettir
+                pictureBox2.Location = new Point(pictureBox2.Location.X, pictureBox2.Location.Y + moveStep);
             }
             else
             {
-                timer.Stop(); // Süre bittiğinde timer durdur
-                MessageBox.Show("Süre doldu!"); // İsteğe bağlı: süre dolduğunda bir uyarı göster
-                // Burada süre bittiğinde yapılacak diğer işlemleri ekleyebilirsiniz.
+                // Süre dolduğunda timer durdurulacak
+                timer.Stop();
+                MessageBox.Show("Pres makinesi arabayı ezdi!");
             }
         }
         private void ana_syf_Click(object sender, EventArgs e)
@@ -75,11 +80,6 @@ namespace Smash_The_Math
         private void button4_Click(object sender, EventArgs e)
         {
             textBox1.Text += "/";
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-
         }
     }
 }
