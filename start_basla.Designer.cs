@@ -32,7 +32,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.profile_buton = new System.Windows.Forms.Button();
             this.skor_tablo_buton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -84,21 +84,21 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button3
+            // profile_buton
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.Gold;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Gold;
-            this.button3.Location = new System.Drawing.Point(734, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(70, 70);
-            this.button3.TabIndex = 4;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            this.button3.Paint += new System.Windows.Forms.PaintEventHandler(this.button3_Paint);
+            this.profile_buton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.profile_buton.BackColor = System.Drawing.Color.Gold;
+            this.profile_buton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("profile_buton.BackgroundImage")));
+            this.profile_buton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.profile_buton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.profile_buton.ForeColor = System.Drawing.Color.Gold;
+            this.profile_buton.Location = new System.Drawing.Point(734, 0);
+            this.profile_buton.Name = "profile_buton";
+            this.profile_buton.Size = new System.Drawing.Size(70, 70);
+            this.profile_buton.TabIndex = 4;
+            this.profile_buton.UseVisualStyleBackColor = false;
+            this.profile_buton.Click += new System.EventHandler(this.profile_buton_Click);
+            this.profile_buton.Paint += new System.Windows.Forms.PaintEventHandler(this.profile_buton_Paint);
             // 
             // skor_tablo_buton
             // 
@@ -125,13 +125,12 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(804, 451);
             this.Controls.Add(this.skor_tablo_buton);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.profile_buton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Name = "start_basla";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.start_basla_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -141,7 +140,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button profile_buton;
         private System.Windows.Forms.Button skor_tablo_buton;
     }
 }

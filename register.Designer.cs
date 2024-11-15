@@ -138,7 +138,6 @@
             this.txtsifreonayla.Name = "txtsifreonayla";
             this.txtsifreonayla.Size = new System.Drawing.Size(210, 25);
             this.txtsifreonayla.TabIndex = 8;
-            this.txtsifreonayla.TextChanged += new System.EventHandler(this.txtsifreonayla_TextChanged);
             // 
             // chkSifreGoster
             // 

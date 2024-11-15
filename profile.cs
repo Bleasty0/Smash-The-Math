@@ -35,11 +35,6 @@ namespace skor_tablo
             this.Hide();
         }
 
-        private void kullanici_profil_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();

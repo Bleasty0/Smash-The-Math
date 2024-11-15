@@ -16,23 +16,13 @@ namespace Smash_The_Math
         private Timer timer;
         private int timeLeft = 15;
         private int moveStep = 7;
+        private int lives = 3; // Can sayısı
+
         public ingame()
         {
             InitializeComponent();
             InitializeTimer();
-        }
-
-
-        private void InitializeGame()
-        {
-            // Timer ayarları
-            timer = new Timer();
-            timer.Interval = 1000; // Her 1 saniyede bir tetiklenecek
-            timer.Tick += Timer_Tick;
-            timer.Start();
-
-            // Süre başlangıç değeri
-            label4.Text = $"00:{timeLeft:D2}";
+            label1.Text = lives.ToString(); // Can sayısını başlangıçta göster
         }
 
         private void InitializeTimer()
@@ -60,11 +50,39 @@ namespace Smash_The_Math
             }
             else
             {
-                // Süre dolduğunda timer durdurulacak
-                timer.Stop();
-                MessageBox.Show("Pres makinesi arabayı ezdi!");
+                // Süre dolduğunda can kaybı işlemi
+                LoseLife();
             }
         }
+
+        private void LoseLife()
+        {
+            // Can sayısını azalt
+            lives--;
+            label1.Text = lives.ToString(); // Güncellenen can sayısını göster
+
+            // Can sayısı 0 olduğunda oyunu bitir
+            if (lives <= 0)
+            {
+                timer.Stop();
+                MessageBox.Show("Tüm canlar tükendi, oyun bitti!");
+
+                // Ana ekrana geri dönme
+                start_basla start = new start_basla(); // Ana ekran formunu tanımlayın
+                start.Show(); // Ana ekran formunu göster
+                this.Hide(); // Şu anki formu kapat
+            }
+            else
+            {
+                // Süreyi ve pres makinesinin konumunu sıfırla
+                timeLeft = 15;
+                label4.Text = $"00:{timeLeft:D2}";
+                pictureBox2.Location = new Point(pictureBox2.Location.X, -585); // Başlangıç konumuna geri taşı
+                timer.Start(); // Tekrar başlat
+                MessageBox.Show("Can kaybettiniz! Bir sonraki denemeye geçiliyor.");
+            }
+        }
+
         private void ana_syf_Click(object sender, EventArgs e)
         {
             start_basla start = new start_basla();

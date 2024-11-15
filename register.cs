@@ -70,11 +70,6 @@ namespace Görsel_Programlama_Oyunu
             MessageBox.Show("Kayıt başarılı. Giriş yapabilirsiniz.");
         }
 
-        private void txtsifreonayla_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void chkSifreGoster_CheckedChanged(object sender, EventArgs e)
         {
             // Şifreyi göster kutusu işaretli ise şifreyi düz metin olarak gösterir, değilse gizler
