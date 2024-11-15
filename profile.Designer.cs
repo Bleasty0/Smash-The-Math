@@ -267,7 +267,6 @@
             this.Name = "kullanici_profil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "kullanici_profil";
-            this.Load += new System.EventHandler(this.kullanici_profil_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

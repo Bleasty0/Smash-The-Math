@@ -20,12 +20,6 @@ namespace Görsel_Programlama_Oyunu
             // Şifrenin gizlenmesini sağlamak için PasswordChar özelliğini ayarlıyoruz. Değişti.
             txtsifre.PasswordChar = '•';
         }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             frmRegister kayitFormu = new frmRegister(); // Kayıt ekranını açıyoruz

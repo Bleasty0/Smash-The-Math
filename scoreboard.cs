@@ -56,7 +56,6 @@ namespace skor_tablo
             start_basla start = new start_basla();
             start.Show();
             this.Hide();
-            
         }
     }
 }

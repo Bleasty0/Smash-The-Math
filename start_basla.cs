@@ -26,15 +26,6 @@
                 this.Hide();
             }
 
-            private void button3_Paint(object sender, PaintEventArgs e)
-            {
-           
-                    Button btn = sender as Button;
-                    GraphicsPath path = new GraphicsPath();
-                    path.AddEllipse(0, 0, btn.Width, btn.Height);
-                    btn.Region = new Region(path);
-            }
-
             private void skor_tablo_buton_Click(object sender, EventArgs e)
             {
                 scoreboard scoreboard = new scoreboard();
@@ -50,9 +41,20 @@
                 this.Hide();
             }
 
-            private void start_basla_Load(object sender, EventArgs e)
+            private void profile_buton_Click(object sender, EventArgs e)
             {
+                kullanici_profil kullanici_Profil = new kullanici_profil();
+                kullanici_Profil.Show();
+                this.Hide();
+            }
 
+            private void profile_buton_Paint(object sender, PaintEventArgs e)
+            {
+                Button btn = sender as Button;
+                GraphicsPath path = new GraphicsPath();
+                path.AddEllipse(0, 0, btn.Width, btn.Height);
+                btn.Region = new Region(path);
             }
         }
-    }
+    }    
+
