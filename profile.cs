@@ -1,4 +1,5 @@
-﻿using Smash_The_Math;
+﻿using Görsel_Programlama_Oyunu;
+using Smash_The_Math;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,9 @@ namespace skor_tablo
 
         private void cıkis_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            signin signin = new signin();
+            signin.Show();
+            this.Hide();
         }
 
         private void bilgilerim_Click(object sender, EventArgs e)

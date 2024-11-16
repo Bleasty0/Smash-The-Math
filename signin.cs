@@ -17,9 +17,10 @@ namespace Görsel_Programlama_Oyunu
         public signin()
         {
             InitializeComponent();
-            // Şifrenin gizlenmesini sağlamak için PasswordChar özelliğini ayarlıyoruz. Değişti.
+            // Şifrenin gizlenmesini sağlamak için PasswordChar özelliğini ayarlıyoruz.
             txtsifre.PasswordChar = '•';
         }
+
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             frmRegister kayitFormu = new frmRegister(); // Kayıt ekranını açıyoruz
@@ -36,41 +37,68 @@ namespace Görsel_Programlama_Oyunu
                 return;
             }
 
-            // SQL bağlantısını aç
-            using (SqlConnection con = new SqlConnection("Data Source=DESKTOP-PR7BV4J\\SQLEXPRESS;Initial Catalog=deneme;Integrated Security=True"))
+            try
             {
-                con.Open();
-
-                // Kullanıcı adı ve şifreyi kontrol etmek için SQL komutu
-                string query = "SELECT COUNT(1) FROM kullanici_tablosu WHERE kullanici_adi=@kullanici_adi AND sifre=@sifre";
-                using (SqlCommand cmd = new SqlCommand(query, con))
+                // SQL bağlantısını aç
+                using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\Database1.mdf"";Integrated Security=True"))
                 {
-                    cmd.Parameters.AddWithValue("@kullanici_adi", txtkullaniciadi.Text);
-                    cmd.Parameters.AddWithValue("@sifre", txtsifre.Text); // Şifre hashlenmiş ise burada da hashlenmiş haliyle kontrol edin.
+                    con.Open();
 
-                    int count = Convert.ToInt32(cmd.ExecuteScalar());
+                    // Kullanıcı adı ve şifreyi kontrol etmek için SQL komutu
+                    string query = "SELECT COUNT(1) FROM [Table] WHERE kullanici_adi = @kullanici_adi AND sifre = @sifre";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@kullanici_adi", txtkullaniciadi.Text);
+                        cmd.Parameters.AddWithValue("@sifre", txtsifre.Text);
 
-                    if (count == 1)
-                    {
-                        // Giriş başarılı, ana formu aç
-                        MessageBox.Show("Giriş başarılı!");
-                        start_basla start_basla = new start_basla(); // Ana formunuzu burada tanımlayın
-                        start_basla.Show();
-                        this.Hide(); // Giriş formunu gizle
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                        if (count == 1)
+                        {
+                            // Giriş başarılı, ana formu aç
+                            MessageBox.Show("Giriş başarılı!");
+                            start_basla startBasla = new start_basla();
+                            startBasla.Show();
+                            this.Hide(); // Giriş formunu gizle
+                        }
+                        else
+                        {
+                            MessageBox.Show("Kullanıcı adı veya şifre hatalı.");
+                        }
                     }
-                    else
-                    {
-                        MessageBox.Show("Kullanıcı adı veya şifre hatalı.");
-                    }
+
+                    con.Close();
                 }
-
-                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Veritabanı bağlantısında bir hata oluştu: " + ex.Message);
             }
         }
+
         private void chkSifreGoster_CheckedChanged_1(object sender, EventArgs e)
         {
             // Şifreyi göster kutusu işaretli ise şifreyi düz metin olarak gösterir, değilse gizler
             txtsifre.PasswordChar = chkSifreGoster.Checked ? '\0' : '•';
+        }
+
+        private void temizle_butonu_Click(object sender, EventArgs e)
+        {
+            // Kullanıcı adı ve şifre alanlarını temizliyoruz.
+            txtkullaniciadi.Text = "";
+            txtsifre.Text = "";
+
+            // İmleci kullanıcı adı alanına odaklıyoruz.
+            txtkullaniciadi.Focus();
+        }
+
+        private void signin_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Enter tuşuna basıldığında "Giriş Yap" butonuna tıkla
+            if (e.KeyCode == Keys.Enter)
+            {
+                giris_yap.PerformClick(); // Giriş Yap butonuna tıklar
+            }
         }
     }
 }
