@@ -9,8 +9,6 @@ C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Deb
 C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Smash The Math.pdb
 C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Smash_The_Math.ingame.resources
 C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Görsel_Programlama_Oyunu.frmRegister.resources
-C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Görsel_Programlama_Oyunu.signin.resources
-C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\skor_tablo.kullanici_profil.resources
 C:\Users\mertk\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\bin\Debug\Smash The Math.exe.config
 C:\Users\mertk\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\bin\Debug\Smash The Math.exe
 C:\Users\mertk\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\bin\Debug\Smash The Math.pdb
@@ -60,3 +58,5 @@ C:\Users\HP\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug
 C:\Users\HP\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Smash The Math.pdb
 C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\bin\Debug\Database1.mdf
 C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\bin\Debug\Database1_log.ldf
+C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\skor_tablo.kullanici_profil.resources
+C:\Users\Mete\Desktop\Görsel Ve Mat Proje\Smash The Math\Smash The Math\obj\Debug\Görsel_Programlama_Oyunu.signin.resources

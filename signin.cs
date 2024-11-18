@@ -57,6 +57,11 @@ namespace Görsel_Programlama_Oyunu
                         {
                             // Giriş başarılı, ana formu aç
                             MessageBox.Show("Giriş başarılı!");
+
+                            // Kullanıcı giriş yaptı, kullanıcı adını global değişkene at
+                            GlobalVariables.KullaniciAdi = txtkullaniciadi.Text;
+
+                            // Ana formu aç
                             start_basla startBasla = new start_basla();
                             startBasla.Show();
                             this.Hide(); // Giriş formunu gizle

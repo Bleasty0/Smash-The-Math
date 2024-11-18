@@ -66,6 +66,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="GlobalVariables.cs" />
     <Compile Include="ingame.cs">
       <SubType>Form</SubType>
     </Compile>

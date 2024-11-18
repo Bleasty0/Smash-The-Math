@@ -14,13 +14,14 @@ namespace skor_tablo
 {
     public partial class kullanici_profil : Form
     {
+
         public kullanici_profil()
         {
             InitializeComponent();
         }
-
         private void cıkis_Click(object sender, EventArgs e)
         {
+            GlobalVariables.KullaniciAdi = ""; // Global değişkeni sıfırla
             signin signin = new signin();
             signin.Show();
             this.Hide();
@@ -49,6 +50,12 @@ namespace skor_tablo
                 // Seçilen dosyayı PictureBox'a yükle
                 pictureBox2.Image = Image.FromFile(openFileDialog.FileName);
             }
+        }
+
+        private void kullanici_profil_Load(object sender, EventArgs e)
+        {
+            // Global değişkende saklanan kullanıcı adını göster
+            label3.Text = GlobalVariables.KullaniciAdi;
         }
     }
 
